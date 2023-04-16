@@ -115,6 +115,15 @@ jobs:
           destination_branch: "main"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: mmrotate
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "git@github.com:open-mmlab/mmrotate.git"
+          source_branch: "1.x"
+          destination_repo: "git@github.com:${{ secrets.USER }}/mmrotate.git"
+          destination_branch: "1.x"
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: mmsegmentation
         uses: wei/git-sync@v3
         with:
