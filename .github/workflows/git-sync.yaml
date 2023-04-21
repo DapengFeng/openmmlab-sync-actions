@@ -11,144 +11,144 @@ jobs:
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mim.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mim.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmaction2
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmaction2.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmaction2.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmcv
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmcv.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmcv.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmdeploy
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmdeploy.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmdeploy.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmdetection
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmdetection.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmdetection.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmdetection3d
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmdetection3d.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmdetection3d.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmediting
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmediting.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmediting.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmengine
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmengine.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmengine.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmeval
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmeval.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmeval.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmocr
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmocr.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmocr.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmpose
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmpose.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmpose.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmpretrain
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmpretrain.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmpretrain.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmrotate
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmrotate.git"
-          source_branch: "1.x"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmrotate.git"
-          destination_branch: "1.x"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmsegmentation
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmsegmentation.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmsegmentation.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmselfsup
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmselfsup.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmselfsup.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: mmyolo
         uses: wei/git-sync@v3
         with:
           source_repo: "git@github.com:open-mmlab/mmyolo.git"
-          source_branch: "main"
+          source_branch: "refs/remotes/source/*"
           destination_repo: "git@github.com:${{ secrets.USER }}/mmyolo.git"
-          destination_branch: "main"
+          destination_branch: "refs/heads/*"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       
